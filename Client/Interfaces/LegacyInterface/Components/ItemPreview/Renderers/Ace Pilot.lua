@@ -1,0 +1,4 @@
+-- Script path: ReplicatedStorage.Client.Interfaces.LegacyInterface.Components.ItemPreview.Renderers.Ace Pilot
+-- Decompile time: 0.07 ms
+
+return {}

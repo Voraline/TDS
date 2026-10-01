@@ -1,0 +1,33 @@
+-- Script path: ReplicatedStorage.Resources.Map
+-- Decompile time: 0.21 ms
+
+return {
+    "Globals/math",
+    "Globals/table",
+    "Common/Standalone/SpringClass",
+    "Common/Standalone/Create",
+    "Common/Standalone/Signal",
+    "Common/Standalone/Binder",
+    "Common/Standalone/Quaternion",
+    "Common/Maid",
+    "Common/Tween",
+    "Common/Bezier",
+    "Common/Promise",
+    "Common/Emitter",
+    "Common/Animation",
+    "Common/GuiLib",
+    "Common/UsernameFromId",
+    "Universal/AssetManager",
+    "Universal/Render",
+    "Universal/Thread",
+    "Universal/Asset",
+    "Universal/Network",
+    "Universal/Raycast",
+    "Universal/Experience",
+    "Universal/Rank",
+    "Universal/GameType",
+    "Universal/GameData",
+    "Universal/Projectile",
+    "Universal/RotatedRegion3",
+    "Universal/TagObserver",
+}

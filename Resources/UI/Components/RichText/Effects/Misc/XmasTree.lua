@@ -1,0 +1,52 @@
+-- Script path: ReplicatedStorage.Resources.UI.Components.RichText.Effects.Misc.XmasTree
+-- Decompile time: 0.93 ms
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+game:GetService("TweenService")
+local Fusion = require(ReplicatedStorage.Resources.UI.Fusion)
+local New = Fusion.New
+local Children = Fusion.Children
+return {
+    DesiredType = "Word",
+    render = function(a1) -- Line: 11 -- upvalues: New (val), Children (val)
+        local v1 = a1.container:Get()
+        if v1 == a1.root then
+            v1 = a1.labels:Get()[1]
+        end
+        local v2 = a1.Stroke == true
+        for i, v in ipairs(a1.labels:Get()) do
+            v.TextColor3 = Color3.fromRGB(37, 111, 0)
+            if not v2 then
+                New("UIStroke")({
+                    Name = "UIStroke",
+                    Thickness = 4,
+                    Transparency = 0.84,
+                    Color = Color3.fromRGB(2, 98, 0),
+                    Parent = v,
+                })
+            end
+        end
+        if not v2 then
+            a1.Stroke = true
+        end
+        if not a1.Background then
+            local ImageLabel = New("ImageLabel")
+            local v3 = {
+                Name = "ImageLabel",
+                Image = "rbxassetid://15381292749",
+                BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+                BackgroundTransparency = 1,
+                BorderColor3 = Color3.fromRGB(0, 0, 0),
+                BorderSizePixel = 0,
+                Position = v1.Position,
+                Size = v1.Size,
+                AnchorPoint = v1.AnchorPoint,
+                ZIndex = -1,
+                Parent = v1.Parent,
+            }
+            v3[Children] = {(New("UICorner")({Name = "UICorner"}))}
+            a1.Background = ImageLabel(v3)
+        end
+        return true
+    end,
+}
